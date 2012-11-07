@@ -44,7 +44,7 @@ console.log("Name: "+a[0]);
 
 // Die verschiedenen _Dimensionen_(Tiefe) eines Arrays erreicht man mit
 // aufeinanderfolgenden Indizes:
-console.log("Titel der Veranstaltung: "+[2][1][0]);
+console.log("Titel der Veranstaltung: "+a[2][1][0]);
 
 
 // ======================
