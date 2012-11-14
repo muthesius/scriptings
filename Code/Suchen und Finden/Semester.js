@@ -2,11 +2,11 @@
 // = Aufgabe: Semesterbelegung als Objekt =
 // ========================================
 
-var mein_semester = {
+window.semester = {
   student: {
-    name: "Christoph Christian Eichhorn",
+    name: "Horst Hansen",
     studiensemester: 3,
-	matrikelnummer: 901252,
+	matrikelnummer: 2410345,
 	studiengang: "Interface Design",
 	studienabschluss: "Master of Arts"
   },

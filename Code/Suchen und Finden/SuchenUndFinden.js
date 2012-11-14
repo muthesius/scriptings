@@ -5,17 +5,18 @@
    von Schleifen und Bedingungen.
  */
 
-// 1. "Lade" Dein "Semester" so, dass Du es überall über den
+// 0. "Lade" Dein "Semester" so, dass Du es überall über den
 //    Namen _semester_ erreichen kannst.
 
 // console.log(semester); // Teste, ob alles gut ging.
 
 
 
-
 // 1. Drucke jede Veranstaltung einzeln(!) in die Console.
 
-
+for (var i=0; i < semester.veranstaltungen.length; i++) {
+  console.log(semester.veranstaltungen[i]);
+}
 
 
 // 2. ... in einem _formatierten_ Text.
@@ -40,7 +41,15 @@ var joker;
 
 // 6. Erstelle ein Array mit allen Titeln der Veranstaltungen
 //    Benutze dafür die Push-Funktion eines Arrays.
-var veranstaltungstitel;
+var veranstaltungstitel = [];
+var v = semester.veranstaltungen;
+
+for (var i=0; i<v.length; i++) {
+  var eineVeranstaltung = v[i];
+  veranstaltungstitel.push(eineVeranstaltung.titel);
+}
+
+console.log(veranstaltungstitel);
 
 
 
@@ -48,6 +57,25 @@ var veranstaltungstitel;
 //    "<mein_name> hat in diesem Semester <Seminar1>,<Seminar1>
 //     ... und <letztes_Seminar> belegt."
 var satz;
+
+satz = semester.student.name+ " hat in diesem Semester ";
+
+var letzteVeranstaltung = veranstaltungstitel.pop();
+
+/*
+for (var i=0; i<veranstaltungstitel.length; i++) {
+  // Tip: if....
+  satz += veranstaltungstitel[i];
+  if(i<veranstaltungstitel.length-1) {
+    satz+=", "   
+  }
+}
+*/
+
+satz += veranstaltungstitel.join(", ")+ " und "+letzteVeranstaltung+" belegt.";
+
+console.log(satz);
+
 
 
 
