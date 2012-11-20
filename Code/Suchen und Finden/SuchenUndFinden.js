@@ -21,7 +21,11 @@ for (var i=0; i < semester.veranstaltungen.length; i++) {
 
 // 2. ... in einem _formatierten_ Text.
 
-
+for (var i=0; i < semester.veranstaltungen.length; i++) {
+  var v = semester.veranstaltungen[i]
+  // "Scriptings", 3 Credits, 2 Semesterwochenstunden mit 90 Stunden Workload im Semester.
+  console.log('"'+v+'", '+v.credits+" Credits, "+v.sws+", Semesterwochenstunden mit "+v.workload+"  Workload im Semester.");
+}
 
 
 // 3. Wie viele Credits hast Du in diesem Semester?
