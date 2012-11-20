@@ -29,8 +29,11 @@ for (var i=0; i < semester.veranstaltungen.length; i++) {
 
 
 // 3. Wie viele Credits hast Du in diesem Semester?
-var gesamt_credits;
-
+var gesamt_credits = 0;
+for (var i=0; i < semester.veranstaltungen.length; i++) {
+  gesamt_credits += semester.veranstaltungen[i].credits;
+}
+console.log("Gesamte Credits in diesem Semester: "+gesamt_credits);
 
 
 // 4. ... und wie hoch ist Dein Workload?
