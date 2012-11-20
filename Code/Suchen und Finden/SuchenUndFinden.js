@@ -49,7 +49,7 @@ console.log("Alle Seminare nehmen in diesem Semester "+gesamt_workload+" Stunden
 var joker;
 for (var i=0; i < semester.veranstaltungen.length; i++) {
   var v = semester.veranstaltungen[i];
-  if( v.credits > joker.credits ) {
+  if( joker === undefined || v.credits > joker.credits ) {
     joker = v;
   }
 }
