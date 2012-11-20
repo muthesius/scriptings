@@ -47,7 +47,13 @@ console.log("Alle Seminare nehmen in diesem Semester "+gesamt_workload+" Stunden
 
 // 5. Finde die Veranstaltung mit den meisten Credits.
 var joker;
-
+for (var i=0; i < semester.veranstaltungen.length; i++) {
+  var v = semester.veranstaltungen[i];
+  if( v.credits > joker.credits ) {
+    joker = v;
+  }
+}
+console.log("Mit "+joker.credits+" bekommt man in "+joker.titel+" die meisten Credits!")
 
 
 // 6. Erstelle ein Array mit allen Titeln der Veranstaltungen
