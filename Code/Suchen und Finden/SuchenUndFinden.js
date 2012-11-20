@@ -37,7 +37,11 @@ console.log("Gesamte Credits in diesem Semester: "+gesamt_credits);
 
 
 // 4. ... und wie hoch ist Dein Workload?
-var gesamt_workload;
+var gesamt_workload = 0;
+for (var i=0; i < semester.veranstaltungen.length; i++) {
+  gesamt_workload += semester.veranstaltungen[i].workload;
+}
+console.log("Alle Seminare nehmen in diesem Semester "+gesamt_workload+" Stunden in Anspruch.");
 
 
 
