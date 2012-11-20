@@ -8,10 +8,10 @@
 // 0. "Lade" Dein "Semester" so, dass Du es überall über den
 //    Namen _semester_ erreichen kannst.
 
-// console.log(semester); // Teste, ob alles gut ging.
+console.log(semester); // Teste, ob alles gut ging.
 
 
-
+console.log("Aufgabe 1 **********************");
 // 1. Drucke jede Veranstaltung einzeln(!) in die Console.
 
 for (var i=0; i < semester.veranstaltungen.length; i++) {
@@ -19,6 +19,7 @@ for (var i=0; i < semester.veranstaltungen.length; i++) {
 }
 
 
+console.log("Aufgabe 2 **********************");
 // 2. ... in einem _formatierten_ Text.
 
 for (var i=0; i < semester.veranstaltungen.length; i++) {
@@ -28,6 +29,7 @@ for (var i=0; i < semester.veranstaltungen.length; i++) {
 }
 
 
+console.log("Aufgabe 3 **********************");
 // 3. Wie viele Credits hast Du in diesem Semester?
 var gesamt_credits = 0;
 for (var i=0; i < semester.veranstaltungen.length; i++) {
@@ -53,9 +55,10 @@ for (var i=0; i < semester.veranstaltungen.length; i++) {
     joker = v;
   }
 }
-console.log("Mit "+joker.credits+" bekommt man in "+joker.titel+" die meisten Credits!")
+console.log("Mit "+joker.credits+" Credits bekommt man in "+joker.titel+" die meisten!")
 
 
+console.log("Aufgabe 6 **********************");
 // 6. Erstelle ein Array mit allen Titeln der Veranstaltungen
 //    Benutze dafür die Push-Funktion eines Arrays.
 var veranstaltungstitel = [];
@@ -70,6 +73,7 @@ console.log(veranstaltungstitel);
 
 
 
+console.log("Aufgabe 7 **********************");
 // 7. Generiere den Satz:
 //    "<mein_name> hat in diesem Semester <Seminar1>,<Seminar1>
 //     ... und <letztes_Seminar> belegt."
