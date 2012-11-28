@@ -2,6 +2,17 @@
 // = Ge-Pimpte Version des Semester-Objects =
 // ==========================================
 
+// Aufgabe: Die *script.js* Datei ist der Sandkasten zum ausprobieren.
+//          Schaue dort nach und erweitere die Datei, indem Du Dich mit dem 
+//          Einsatz des *new* vertraut machst.
+//          Erstelle mehrere Studierende und verschiedene Semester mit diesen.
+//
+//          Schaue ebenfalls in die Fuznktionen dieses Scriptes und vervoll-
+//          ständige die aufgaben.
+//
+//          1) Wie im Seminar kennengelernt, setze die Eigenschaften aus
+//          den Parametern der Funktion in die *this*-Eigenschaften ein.
+
 // Der/die Studierende
 window.Student = function(name,studiensemester) {
   this.name = name; // Schritt 1 von Aufgabe 1, vervollständige alle Funktionen
