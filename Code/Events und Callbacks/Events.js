@@ -20,3 +20,13 @@ runner(onalwaysHandler);
 runner(onalwaysHandler);
 runner(onalwaysHandler);
 runner(onalwaysHandler);
+
+
+// Einfache Browser Events
+
+window.onload = function(event) {};
+
+window.onbeforeunload = function(event) {};
+
+window.onclick = function(event) {};
+
