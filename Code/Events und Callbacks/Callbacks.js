@@ -23,6 +23,18 @@ var credits = semester.veranstaltungen.map( function(veranstaltung){
 // Stimmt der Output?
 console.log(credits);
 
+// 2a) Kannst Du eine Funktion schreiben, die es möglich macht nach einer
+//     beliebigen Eigenschaft zu sortieren?
+
+var pluck = function(eigenschaft) {
+  return function(element) {
+    
+  };
+};
+
+console.log(semester.veranstaltungen.map(pluck("titel")));
+
+
 
 // 3) .filter(function(element){...}) zum Filtern einer Sammlung
 // Beispiel filtere alle Veranstaltungen, bei denen der Workload schon
