@@ -47,3 +47,23 @@ window.onload = function() {
     console.log("Klick aus dem 2. Callback", event)
   }; // schlägt nicht mehr fehl!
 };
+
+
+// ---------------------------------------------------------------------------
+// Problem: immer nur eine Funktion pro Event
+// Lösung 1 .addEventListener(...) verwenden...
+
+// Lösung 2:
+// "getElementsByTagName" sparen UND mehrere Callbacks pro Event durch jQuery nutzen:
+// !! Nicht vergessen, di jQuery JS Datei im HTML Dokument einzubinden!
+$(window).on('load',function(){
+  $('body').on('click',function(event){
+    console.log("Klick aus dem body-onload Callback mit jQuery", event)
+  });
+});
+
+$(document).on('ready',function(){
+  $('body').on('click',function(event){
+    console.log("Klick aus dem document-ready Callback mit jQuery", event)
+  });
+});
