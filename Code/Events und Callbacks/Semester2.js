@@ -18,6 +18,15 @@ window.Veranstaltung = function(titel,sws,credits) {
   this.workload = 0;
   this.zeit = "";
   this.tag = "";
+  
+  // Erweitere die Veranstaltung, so, dass der Workload "automatisch"
+  // berechnet wird.
+  
+  // this.set = ...
+  
+  // Bonus-Aufgabe: Kannst du die _zeit_ ebenfalls "automatisch" berechnen?
+  //                Was brauchst du dafür?
+  
 }
 
 // Das Semester als Funktion(s-Objekt)
