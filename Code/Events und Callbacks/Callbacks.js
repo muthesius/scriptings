@@ -62,3 +62,13 @@ var sortiert = semester.veranstaltungen.sort(function(v1,v2){
 console.log(semester.veranstaltungen,sortiert);
 
 
+// 4a) Kannst Du eine Funktion schreiben, die es möglich macht nach einer
+//     beliebigen Eigenschaft zu sortieren?
+
+var by = function(eigenschaft){
+  return function(a,b) {
+  };
+}
+
+console.log(semester.veranstaltungen.sort(by("credits")));
+
