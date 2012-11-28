@@ -10,7 +10,7 @@
 //          Schaue ebenfalls in die Fuznktionen dieses Scriptes und vervoll-
 //          ständige die aufgaben.
 //
-//          1) Wie im Seminar kennengelernt, setze die Eigenschaften aus
+//          Start: Wie im Seminar kennengelernt, setze die Eigenschaften aus
 //          den Parametern der Funktion in die *this*-Eigenschaften ein.
 
 // Der/die Studierende
@@ -30,6 +30,9 @@ window.Veranstaltung = function(titel,sws,credits) {
   this.zeit = "";
   this.tag = "";
   
+  // Ein Callback "Hook", wenn sich das Semester geändert hat.
+  this.onchange = function(veranstaltung){};
+  
   // Erweitere die Veranstaltung, so, dass der Workload "automatisch"
   // berechnet wird.
   
@@ -48,5 +51,46 @@ window.Semester = function(student,welches,jahr) {
   
   this.veranstaltungen = []; // Zu Beginn ist nichts belegt
   
+  // Diese Varablen dienen als "interne" Zähler, vergiss nicht, sie an
+  // entsprechender Stelle zu aktualisieren!
+  this.credits  = 0;
+  this.workload = 0;
+  
+  // Eine verbreitete Art "private" Eigenschaften zu definieren nutzt den _
+  this._zielcredits = 30;
+  
+  // Ein Semester sollte auch noch mehr "können".
+  // Vervollständige den Code, so weit Du es schaffst.
+  // Welche Methoden fallen Dir noch ein? Schreibe sie dazu.
+  
+  this.addVeranstaltung = function(neue_veranstaltung) {
+    // Fügt den this.veranstaltungen eine neue hinzu.
+  };
+  
+  this.removeVeranstaltung = function(titel) {
+    // Achtung! BONUS! lösche anhand des Titels eine Veranstaltung aus dem Array.
+  };
+  
+  this.getVeranstaltungstitel = function() {
+    // Gebe mit return ein Array mit allen Veranstaltungstiteln zurück
+  };
+
+  this.getGesamtCredits = function() {
+    // Liefert die Gesamtanzahl der Credits in diesem (this) Semester
+  };
+
+  this.getGesamtWorkload = function() {
+    // Liefert den gesamten Workload in diesem (this) Semester
+  };
+  
+  this.creditsCompleted = function() {
+    // Gibt true oder false zurück, ob die Credit-Anzahl erreicht wurde.
+  };
+
+  // *toString* ist ein standardisierter Name für eine Funktion.
+  // Sie wird aufgerufen, wenn das Objekt als String benötigt wird.
+  this.toString = function(){
+    return "Die Beschreibung eines Semesters."
+  }
 }
 
