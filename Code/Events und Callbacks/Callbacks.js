@@ -13,3 +13,14 @@ semester.veranstaltungen.map( function(veranstaltung) {
   console.log(veranstaltung);
 });
 
+
+// 2) Hole alle Credits als Array aus den Veranstaltungen
+
+var credits = semester.veranstaltungen.map( function(veranstaltung){
+  return veranstaltung.credits;
+});
+
+// Stimmt der Output?
+console.log(credits);
+
+
