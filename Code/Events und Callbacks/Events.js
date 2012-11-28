@@ -32,10 +32,10 @@ window.onclick = function(event) {};
 
 
 // -- Document Elemente mit Callbacks versehen
-var b = document.getElementsByTagName('body')[0];
-b.onclick = function(event) {
-  console.log("Klick auf den Body!", event)
-};
+// var b = document.getElementsByTagName('body')[0];
+// b.onclick = function(event) {
+//   console.log("Klick auf den Body!", event)
+// };
 // Schlägt fehl, da das Dokument noch nicht vollständig geladen ist.
 // Ergo b ist undefined!
 
