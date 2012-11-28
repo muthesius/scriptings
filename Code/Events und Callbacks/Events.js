@@ -36,3 +36,14 @@ var b = document.getElementsByTagName('body')[0];
 b.onclick = function(event) {
   console.log("Klick auf den Body!", event)
 };
+// Schlägt fehl, da das Dokument noch nicht vollständig geladen ist.
+// Ergo b ist undefined!
+
+// -- Elemente erst suchen, wenn das gesamte dokument geladen ist
+window.onload = function() {
+  // -- Document Elemente
+  var b = document.getElementsByTagName('body')[0];
+  b.onclick = function(event) {
+    console.log("Klick aus dem 2. Callback", event)
+  }; // schlägt nicht mehr fehl!
+};
