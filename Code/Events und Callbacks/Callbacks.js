@@ -37,3 +37,16 @@ var einfache = semester.veranstaltungen.filter( function(veranstaltung){
 console.log(einfache);
 
 
+// 4) Sortiere die Veranstaltungen nach ihrem Titel
+
+var sortiert = semester.veranstaltungen.sort(function(v1,v2){
+  // Zum Sortieren muss das Ergebnis der Funktion 1, 0 oder -1 sein.
+  if (v1.titel < v2.titel) return -1;
+  if (v1.titel > v2.titel) return  1;
+  else return 0;
+});
+
+// Was fällt auf?
+console.log(semester.veranstaltungen,sortiert);
+
+
