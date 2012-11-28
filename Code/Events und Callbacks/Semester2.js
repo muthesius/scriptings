@@ -3,8 +3,8 @@
 // ==========================================
 
 // Der/die Studierende
-window.Student = function(name,semester) {
-  this.name = "";
+window.Student = function(name,studiensemester) {
+  this.name = name; // Schritt 1 von Aufgabe 1, vervollständige alle Funktionen
   this.studiensemester = 0;
   this.matrikelnummer = 0;
   this.studiengang = "";
