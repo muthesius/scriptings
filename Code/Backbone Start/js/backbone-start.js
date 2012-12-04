@@ -7,6 +7,9 @@ var SemesterApp = Backbone.View.extend({
   
   initialize: function(){
     console.log("Eine neue SemesterApp! Das bin ich:", this);
+    
+    // Damit die View auch zu Beginn "zu sehen" ist rufen wir render auf:
+    this.render();
   },
   
   // Um alle direkten visuellen Aktionen übersichtlich zu halten, sammlt
