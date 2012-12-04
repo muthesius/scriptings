@@ -6,7 +6,9 @@ var SemesterApp = Backbone.View.extend({
   el: 'body'
 });
 
-var app = new SemesterApp();
+$(function(){
+  var app = new SemesterApp();
 
-// Zum Test das el in die Console loggen:
-console.log(app.el);
+  // Zum Test das el in die Console loggen:
+  console.log(app.el);
+});
