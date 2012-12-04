@@ -10,20 +10,38 @@
     <script src="js/lib/backbone-min.js"></script>
     
     <!-- Dann das eigene -->
+    <script src="js/Semester.js"></script>
     <script src="js/backbone-start.js"></script>
     
     <!-- ... und damit es schöner aussieht ein Stylesheet -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     
+    <!-- Das Template -->
     <script type="text/template" id="app-view">
-      <small>Templates sind wie Lückentexte. Sie können auf Eigenschaften der View zugreifen. Zum Beispiel den Namen oder die Beschreibung:</small>
       <h1><%= name %></h1>
-      <p>
-        <blockquote>
-          <%= about %>
-        </blockquote>
-      </p>
+
+      <div id="semester-info">
+        <%= semester.welches %><%= semester.jahr %>
+      </div>
+
+      <div id="student">
+        Hallo, <%= semester.student.name %>!
+      </div>
+
+      <div id="veranstaltungen">
+        <p>Du hast in diesem Semester <%= semester.veranstaltungen.length %> Veranstaltungen. Hier ein Überblick:</p>
+
+        <% for (var i=0; i<semester.veranstaltungen.length; i++) {
+            var v = semester.veranstaltungen[i]; %>
+          <div class="veranstaltung" id="veranstaltung-<%= i %>">
+            <h3><%= v.titel %></h3>
+            <small><%= v.tag %>, <%= v.zeit %></small>
+          </div>
+        <% } %>
+
+      </div>
     </script>
+    
   </head>
   <body></body>
 </html>
