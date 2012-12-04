@@ -7,6 +7,11 @@ var SemesterApp = Backbone.View.extend({
   
   initialize: function(){
     console.log("Eine neue SemesterApp! Das bin ich:", this);
+    
+    // Zum Test, dynamisch Content in die View einzusetzen
+    // testen wir mit etwas Text. Backbone bietet einen direkten
+    // Zugriff auf das jQuery Element der View durch this.$el
+    this.$el.text("I am dynamic conent!");
   }
   
 });
