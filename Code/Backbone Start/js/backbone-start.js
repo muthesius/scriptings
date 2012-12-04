@@ -8,17 +8,19 @@ var SemesterApp = Backbone.View.extend({
   initialize: function(){
     console.log("Eine neue SemesterApp! Das bin ich:", this);
     
+    // Damit das Layout nicht im Code geschiet, verwenden wir Templates
+    this.template = _.template($('#app-view').html());
+    
     // Damit die View auch zu Beginn "zu sehen" ist rufen wir render auf:
     this.render();
   },
   
-  // Um alle direkten visuellen Aktionen übersichtlich zu halten, sammlt
-  // man diese zentral in der render-Funktion:
+  // Den Content rendern:
   render: function() {
-    // Zum Test, dynamisch Content in die View einzusetzen
-    // testen wir mit etwas Text. Backbone bietet einen direkten
-    // Zugriff auf das jQuery Element der View durch this.$el
-    this.$el.text("I am dynamic conent!");
+    // Das Template wird ebenfalls "gerendert" und ...
+    var viewHtml = this.template(this);
+    // heraus kommt HTML, das wir in unser Element einfügen können:
+    this.$el.html( viewHtml );
   }
   
 });
