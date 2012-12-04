@@ -3,7 +3,12 @@
 // ==================
 
 var SemesterApp = Backbone.View.extend({
-  el: 'body'
+  el: 'body',
+  
+  initialize: function(){
+    console.log("Eine neue SemesterApp! Das bin ich:", this);
+  }
+  
 });
 
 $(function(){
