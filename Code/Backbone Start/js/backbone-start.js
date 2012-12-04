@@ -8,6 +8,8 @@ var SemesterApp = Backbone.View.extend({
   name  : "Semesterplan",
   about : "Das Semester im Überblick",
   
+  data : window.semester,
+  
   initialize: function(){
     console.log("Eine neue SemesterApp! Das bin ich:", this);
     
