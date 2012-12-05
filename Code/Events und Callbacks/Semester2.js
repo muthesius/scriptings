@@ -75,6 +75,7 @@ window.Semester = function(student,welches,jahr) {
   
   this.addVeranstaltung = function(neue_veranstaltung) {
     // Fügt den this.veranstaltungen eine neue hinzu.
+    this.veranstaltungen.push(neue_veranstaltung);
   };
   
   this.removeVeranstaltung = function(titel) {
