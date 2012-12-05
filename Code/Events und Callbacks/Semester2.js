@@ -26,17 +26,27 @@ window.Veranstaltung = function(titel,sws,credits,zeit,tag) {
   this.titel = titel;
   this.sws = sws;
   this.credits = credits;
-  this.workload = credits*30;
+  this.workload = this.credits*30;
   this.zeit = zeit;
   this.tag = tag;
   
   // Ein Callback "Hook", wenn sich das Semester geändert hat.
-  this.onchange = function(veranstaltung){};
+  this.onchange = function(veranstaltung,changed_property){
+    switch (changed_property) {
+        case "credits":
+          console.log(arguments);
+          this.workload = this.credits*30;
+        break;
+    }
+  };
   
   // Erweitere die Veranstaltung, so, dass der Workload "automatisch"
   // berechnet wird.
   
-  // this.set = ...
+  this.set = function(eigenschaft,wert){
+    this[eigenschaft] = wert;
+    this.onchange(this,eigenschaft);
+  }
   
   // Bonus-Aufgabe: Kannst du die _zeit_ ebenfalls "automatisch" berechnen?
   //                Was brauchst du dafür?
