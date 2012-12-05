@@ -84,6 +84,9 @@ window.Semester = function(student,welches,jahr) {
   
   this.getVeranstaltungstitel = function() {
     // Gebe mit return ein Array mit allen Veranstaltungstiteln zurück
+    return this.veranstaltungen.map(function(v){
+        return v.titel;
+    });
   };
 
   this.getGesamtCredits = function() {
