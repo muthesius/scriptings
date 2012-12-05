@@ -72,10 +72,18 @@ window.Semester = function(student,welches,jahr) {
   // Ein Semester sollte auch noch mehr "können".
   // Vervollständige den Code, so weit Du es schaffst.
   // Welche Methoden fallen Dir noch ein? Schreibe sie dazu.
+  this.updateCredits = function(){
+    var gesamt = 0;
+		this.veranstaltungen.map(function(v){
+				gesamt += v.credits;
+		});
+		this.credits = gesamt;
+  };
   
   this.addVeranstaltung = function(neue_veranstaltung) {
     // Fügt den this.veranstaltungen eine neue hinzu.
     this.veranstaltungen.push(neue_veranstaltung);
+		this.updateCredits();
   };
   
   this.removeVeranstaltung = function(titel) {
@@ -91,6 +99,8 @@ window.Semester = function(student,welches,jahr) {
 
   this.getGesamtCredits = function() {
     // Liefert die Gesamtanzahl der Credits in diesem (this) Semester
+		this.updateCredits();
+		return this.credits;
   };
 
   this.getGesamtWorkload = function() {
@@ -99,6 +109,7 @@ window.Semester = function(student,welches,jahr) {
   
   this.creditsCompleted = function() {
     // Gibt true oder false zurück, ob die Credit-Anzahl erreicht wurde.
+		return this.credits >= this._zielcredits;
   };
 
   // *toString* ist ein standardisierter Name für eine Funktion.
