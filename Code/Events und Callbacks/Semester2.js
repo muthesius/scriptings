@@ -103,8 +103,17 @@ window.Semester = function(student,welches,jahr) {
 		return this.credits;
   };
 
+	this.updateWorkload = function(){
+    var gesamt = 0;
+		this.veranstaltungen.map(function(v){
+				gesamt += v.workload;
+		});
+		this.workload = gesamt;
+	}
   this.getGesamtWorkload = function() {
     // Liefert den gesamten Workload in diesem (this) Semester
+		this.updateWorkload();
+		return this.workload;
   };
   
   this.creditsCompleted = function() {
