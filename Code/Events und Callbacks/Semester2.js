@@ -14,12 +14,12 @@
 //          den Parametern der Funktion in die *this*-Eigenschaften ein.
 
 // Der/die Studierende
-window.Student = function(name,studiensemester) {
+window.Student = function(name,studiensemester,matrikelnummer,studiengang,abschluss) {
   this.name = name; // Schritt 1 von Aufgabe 1, vervollständige alle Funktionen
-  this.studiensemester = 0;
-  this.matrikelnummer = 0;
-  this.studiengang = "";
-  this.studienabschluss = "";
+  this.studiensemester = studiensemester;
+  this.matrikelnummer = matrikelnummer;
+  this.studiengang = studiengang;
+  this.studienabschluss = abschluss;
 };
 
 window.Veranstaltung = function(titel,sws,credits) {
