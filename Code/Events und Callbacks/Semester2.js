@@ -22,13 +22,13 @@ window.Student = function(name,studiensemester,matrikelnummer,studiengang,abschl
   this.studienabschluss = abschluss;
 };
 
-window.Veranstaltung = function(titel,sws,credits) {
-  this.titel = "";
-  this.sws = 0;
-  this.credits = 0;
-  this.workload = 0;
-  this.zeit = "";
-  this.tag = "";
+window.Veranstaltung = function(titel,sws,credits,zeit,tag) {
+  this.titel = titel;
+  this.sws = sws;
+  this.credits = credits;
+  this.workload = credits*30;
+  this.zeit = zeit;
+  this.tag = tag;
   
   // Ein Callback "Hook", wenn sich das Semester geändert hat.
   this.onchange = function(veranstaltung){};
