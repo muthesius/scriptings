@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Backbone Start</title>
+    
+    <!-- Zuerst alle externen Scripte laden -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    
+    <!-- Dann das eigene -->
+    <script src="js/Semester.js"></script>
+    <script src="js/backbone-start.js"></script>
+    
+    <!-- ... und damit es schöner aussieht ein Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    
+    <!-- Das Template -->
+    <script type="text/template" id="app-view">
+      <h1><%= name %></h1>
+
+      <div id="semester-info">
+        <%= semester.welches %><%= semester.jahr %>
+      </div>
+
+      <div id="student"></div>
+
+      <div id="veranstaltungen">
+        <p>Du hast in diesem Semester <%= semester.veranstaltungen.length %> Veranstaltungen. Hier ein Überblick:</p>
+
+        <% for (var i=0; i<semester.veranstaltungen.length; i++) {
+            var v = semester.veranstaltungen[i]; %>
+          <div class="veranstaltung" id="veranstaltung-<%= i %>">
+            <h3><%= v.titel %></h3>
+            <small><%= v.tag %>, <%= v.zeit %></small>
+          </div>
+        <% } %>
+
+      </div>
+    </script>
+    
+    <!-- Student View Template -->
+    <script type="text/template" id="student-view">
+      <span id="<%= matrikelnummer %>">Hallo, <%= name %>!</span>
+      <small>Studiensemester: <%= studiensemester %></small>
+    </script>
+    
+  </head>
+  <body></body>
+</html>
