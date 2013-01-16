@@ -47,5 +47,7 @@ var SemesterApp = Backbone.View.extend({
 
 $(function(){
   var app = new SemesterApp();
-  var router
+  var router = new AppRouter();
+  Backbone.history.start({});
+  
 });
