@@ -31,15 +31,6 @@
 
       <div id="veranstaltungen">
         <p>Du hast in diesem Semester <%= semester.veranstaltungen.length %> Veranstaltungen. Hier ein Überblick:</p>
-
-        <% for (var i=0; i<semester.veranstaltungen.length; i++) {
-            var v = semester.veranstaltungen[i]; %>
-          <div class="veranstaltung" id="veranstaltung-<%= i %>">
-            <h3><%= v.titel %></h3>
-            <small><%= v.tag %>, <%= v.zeit %></small>
-          </div>
-        <% } %>
-
       </div>
     </script>
     
@@ -49,6 +40,11 @@
       <small>Studiensemester: <%= studiensemester %></small>
     </script>
     
+    <!-- Veranstaltungs-Template -->
+    <script type="text/template" id="veranstaltungs-view">
+        <h3><%= titel %></h3>
+        <small><%= tag %>, <%= zeit %></small>
+    </script>
   </head>
   <body></body>
 </html>
