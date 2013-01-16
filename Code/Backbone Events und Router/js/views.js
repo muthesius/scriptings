@@ -24,7 +24,7 @@ var VeranstaltungsView = Backbone.View.extend({
   className: "veranstaltung",
   
   events: {
-    "click *":"test"
+    "click .select":"selectMe"
   },
   
   initialize: function(){
@@ -37,8 +37,8 @@ var VeranstaltungsView = Backbone.View.extend({
     this.$el.html( viewHtml );
   },
   
-  test: function(event){
-    console.log(event);
+  selectMe: function(){
+    this.$el.toggleClass('selected');
   }
   
 });

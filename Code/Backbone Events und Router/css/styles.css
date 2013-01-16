@@ -31,7 +31,22 @@ body {
   margin-bottom: 1.8em;
 }
 
+.veranstaltung.selected,
+.veranstaltung:hover.selected {
+  background-color: #eeaaaa;
+}
+
+.veranstaltung:hover {
+  background-color: #eee;
+}
+
 .veranstaltung h3{
   margin-bottom: 0.5em;
 }
-  
+
+.veranstaltung .select {
+  float: right;
+  font-weight: bold;
+  font-size: 130%;
+  cursor: pointer;
+}
