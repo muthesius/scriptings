@@ -19,3 +19,15 @@ var Student = Backbone.Model.extend({
                 +this.attributes.name+" ist jetzt im "+this.attributes.studiensemester+". Semester.");
   }
 });
+
+
+var Veranstaltung = Backbone.Model.extend({
+  defaults: {
+    titel: "Veranstaltung",
+    sws: 0,
+    credits: 0,
+    workload: 0,
+    zeit: "",
+    tag: ""
+  }
+});
