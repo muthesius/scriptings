@@ -2,48 +2,6 @@
 // = Backbone Start =
 // ==================
 
-var Student = Backbone.Model.extend({
-  defaults: {
-    name : "",
-    matrikelnummer : 0,
-    studiensemester: 0,
-    studienabschluss : "",
-    studiengang : "",
-    hochschule : "Muthesius Kunsthochschule",
-  },
-  
-  initialize: function(){
-    // events könne auch im Model selbst eingebunden werden:
-    this.on("change:studiensemester",this.semesterWechsel,this);
-  },
-  
-  semesterWechsel: function(){
-    console.log("Das Studiensemester hat gewechselt! "
-                +this.attributes.name+" ist jetzt im "+this.attributes.studiensemester+". Semester.");
-  }
-});
-
-
-var StudentView = Backbone.View.extend({
-  el: "#student",
-  
-  initialize: function(){
-    this.model = new Student(window.semester.student);
-    
-    // Wir wollen die View nue rendern, wenn sich die Daten ändern...
-    this.model.on("change",this.render, this); // this muss mit! Für den Kontext.
-    
-    this.template = _.template($('#student-view').html());
-    
-    this.render();
-  },
-  
-  render: function() {
-    var viewHtml = this.template(this.model.attributes);
-    this.$el.html( viewHtml );
-  }
-});
-
 
 var SemesterApp = Backbone.View.extend({
   el: 'body',
@@ -81,4 +39,5 @@ var SemesterApp = Backbone.View.extend({
 
 $(function(){
   var app = new SemesterApp();
+  var router
 });
