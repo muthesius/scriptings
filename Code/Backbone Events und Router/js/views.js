@@ -16,4 +16,21 @@ var StudentView = Backbone.View.extend({
     var viewHtml = this.template(this.model.attributes);
     this.$el.html( viewHtml );
   }
+  
 });
+
+
+var VeranstaltungsView = Backbone.View.extend({
+  class: ".veranstaltung",
+  
+  initialize: function(){
+    this.template = _.template($('#veranstaltungs-view').html());
+    this.render();
+  },
+  
+  render: function(){
+    var viewHtml = this.template(this.model.attributes);
+    this.$el.html( viewHtml );
+  }
+  
+})
