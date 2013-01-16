@@ -23,6 +23,10 @@ body {
   margin-left: 0.8em;
 }
 
+#veranstaltungen .action {
+  text-decoration: underline;
+}
+
 #veranstaltungen p{
   font-size: 80%;
 }
