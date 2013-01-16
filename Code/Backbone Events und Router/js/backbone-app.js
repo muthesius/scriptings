@@ -33,6 +33,14 @@ var SemesterApp = Backbone.View.extend({
     
     // Erstelle eine View für den Studierenden (wird automatisch hinzugeladen)
     var studentView = new StudentView();
+    
+    // Rendere die Veranstaltungen hinein
+    for(var i=0; i < this.semester.veranstaltungen.length; i++){
+      var v = this.semester.veranstaltungen[i];
+      var vm = new Veranstaltung(v);
+      var vv = new VeranstaltungsView({ model:vm, id: "veranstaltung-"+i });
+      this.$el.find("#veranstaltungen").append(vv.$el);
+    }
   }
   
 });
