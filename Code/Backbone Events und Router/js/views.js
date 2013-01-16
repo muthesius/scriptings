@@ -21,7 +21,7 @@ var StudentView = Backbone.View.extend({
 
 
 var VeranstaltungsView = Backbone.View.extend({
-  class: ".veranstaltung",
+  className: "veranstaltung",
   
   initialize: function(){
     this.template = _.template($('#veranstaltungs-view').html());
