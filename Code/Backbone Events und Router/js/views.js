@@ -23,6 +23,10 @@ var StudentView = Backbone.View.extend({
 var VeranstaltungsView = Backbone.View.extend({
   className: "veranstaltung",
   
+  events: {
+    "click *":"test"
+  },
+  
   initialize: function(){
     this.template = _.template($('#veranstaltungs-view').html());
     this.render();
@@ -31,6 +35,10 @@ var VeranstaltungsView = Backbone.View.extend({
   render: function(){
     var viewHtml = this.template(this.model.attributes);
     this.$el.html( viewHtml );
+  },
+  
+  test: function(event){
+    console.log(event);
   }
   
-})
+});
