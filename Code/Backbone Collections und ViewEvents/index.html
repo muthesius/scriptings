@@ -9,6 +9,9 @@
     <script src="js/lib/underscore-min.js"></script>
     <script src="js/lib/backbone-min.js"></script>
     
+    <!-- Die Datenbank -->
+    <script src="db/vvz.js"></script>
+    
     <!-- Dann das eigene -->
     <script src="js/Semester.js"></script>
     <script src="js/models.js"></script>
@@ -21,13 +24,15 @@
     
     <!-- Das Template -->
     <script type="text/template" id="app-view">
-      <h1><%= name %></h1>
+      <header>
+        <h1><%= name %></h1>
 
-      <div id="semester-info">
-        <%= semester.welches %><%= semester.jahr %>
-      </div>
-
-      <div id="student"></div>
+        <div id="semester-info">
+          <%= semester.welches %><%= semester.jahr %>
+        </div>
+      
+        <div id="student"></div>
+      </header>
 
       <div id="veranstaltungen">
         <p>Du hast in diesem Semester <%= semester.veranstaltungen.length %> Veranstaltungen. Hier ein Überblick (<a class="action" href="#selected">Zeige nur ausgewählte</a> | <a class="action" href="#all">Zeige alle</a>)</p>

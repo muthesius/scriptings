@@ -13,6 +13,20 @@ body {
   border-bottom: 1px solid;
 }
 
+header {
+  position: relative;
+}
+header > * {
+  display: inline;
+}
+
+header > *:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
 #semester-info {
   font-size: 80%;
   
