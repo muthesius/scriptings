@@ -31,3 +31,16 @@ var Veranstaltung = Backbone.Model.extend({
     tag: ""
   }
 });
+
+
+
+var Vorlesungsverzeichnis = Backbone.Collection.extend({
+  model: Veranstaltung
+});
+
+
+
+
+
+
+

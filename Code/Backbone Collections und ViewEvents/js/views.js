@@ -42,3 +42,34 @@ var VeranstaltungsView = Backbone.View.extend({
   }
   
 });
+
+
+var VVZView = Backbone.View.extend({
+  collection: new Vorlesungsverzeichnis(VVZ.veranstaltungen),
+  
+  initialize: function(){
+    this.template = _.template($('#vorlesungsverzeichnis-view').html());
+    this.render();
+  },
+  
+  render: function() {
+    var viewHtml = this.template({});
+    this.$el.html( viewHtml );
+    var $html = this.$el;
+    
+    this.collection.each(function(veranstaltung){
+      var vview = new VeranstaltungsView({ model: veranstaltung })
+      $html.append(vview.el);
+    })
+  }
+});
+
+
+
+
+
+
+
+
+
+
