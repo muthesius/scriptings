@@ -1,4 +1,4 @@
-var StudentView = Backbone.View.extend({
+var StudentFrontView = Backbone.View.extend({
   el: "#student",
   
   initialize: function(){
