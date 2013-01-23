@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     
     <!-- Das Template -->
-    <script type="text/template" id="app-view">
+    <script type="text/template" id="main-view">
       <header>
         <h1><%= name %></h1>
 
@@ -34,9 +34,12 @@
         <div id="student"></div>
       </header>
 
-      <div id="veranstaltungen">
-        <p>Du hast in diesem Semester <%= semester.veranstaltungen.length %> Veranstaltungen. Hier ein Überblick (<a class="action" href="#selected">Zeige nur ausgewählte</a> | <a class="action" href="#all">Zeige alle</a>)</p>
-      </div>
+      <navigation id="nav">
+        <a class="action" href="#vvz">Vorlesungsverzeichnis</a> | 
+        <a class="action" href="#me">Mein Semester</a>
+      </navigation>
+      
+      <div id="container"></div>
     </script>
     
     <!-- Student View Template -->

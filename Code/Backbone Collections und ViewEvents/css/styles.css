@@ -26,6 +26,11 @@ header > *:last-child {
   bottom: 0;
 }
 
+navigation {
+  display: block;
+  margin-top: 1.5em;
+}
+
 
 #semester-info {
   font-size: 80%;

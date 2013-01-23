@@ -2,20 +2,20 @@
 var AppRouter = Backbone.Router.extend({
   routes: {
     "" : "home",
-    "all":"showAll",
-    "selected":"selectedOnly"
+    "me":"showStudentDetails",
+    "vvz":"vvz"
   },
   
   home: function(){
-    
+    Backbone.history.navigate("vvz");
   },
   
-  showAll: function(){
-    $('.veranstaltung').show();
+  vvz: function(){
+    // new VVZView({el:$('#container')}); 
   },
   
-  selectedOnly: function(){
-    $('.veranstaltung').not('.selected').hide();
+  showStudentDetails: function(){
+    // new StudentDetailView({el:$('#container')});
   }
   
 })

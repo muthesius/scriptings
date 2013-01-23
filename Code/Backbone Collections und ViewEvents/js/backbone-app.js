@@ -16,7 +16,7 @@ var SemesterApp = Backbone.View.extend({
     console.log("Eine neue SemesterApp! Das bin ich:", this);
     
     // Damit das Layout nicht im Code geschiet, verwenden wir Templates
-    this.template = _.template($('#app-view').html());
+    this.template = _.template($('#main-view').html());
     
     // Damit die View auch zu Beginn "zu sehen" ist rufen wir render auf:
     this.render();
@@ -49,5 +49,4 @@ $(function(){
   var app = new SemesterApp();
   var router = new AppRouter();
   Backbone.history.start({});
-  
 });
