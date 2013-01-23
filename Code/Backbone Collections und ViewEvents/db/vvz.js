@@ -1,6 +1,5 @@
 var VVZ = {
 	"studiengaenge": [
-		"Studiengang, Institut oder Zentrum wählen",
 		"Freie Kunst",
 		"Industriedesign",
 		"Kommunikationsdesign",
@@ -19,7 +18,6 @@ var VVZ = {
 		"Sound Studies (übergreifend)"
 	],
 	"studienfaecher": [
-		"Studienfach wählen",
 		"RS B.A. Gestaltungsgrundlagen- Modul 1",
 		"RS B.A. Studienmodul 1 Zeichnen",
 		"RS B.A. Farblehre- Modul 1",
@@ -227,7 +225,6 @@ var VVZ = {
 		"Vortraege Projekte Veranstaltungen"
 	],
 	"module": [
-		"Modul wählen",
 		"Raumstrategien B.A. Grundlehre Bildnerische und räumliche Grundlagen- Modul 1",
 		"Raumstrategien B.A. Projekt 1 Grundlagen/Entwurf- Modul 2",
 		"Raumstrategien B.A. Methoden 1 Darstellung, Material und Konstruktion- Modul 3",
@@ -323,7 +320,6 @@ var VVZ = {
 		"Vortraege Projekte Veranstaltungen (ohne Credits)"
 	],
 	"dozenten": [
-		"- Wählen Sie einen Dozenten -",
 		"Frau Prof. in Dr. Kerstin Abraham",
 		"Herr Tim Albrecht",
 		"Herr René Baltrusch",
