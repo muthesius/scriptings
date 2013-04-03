@@ -7,6 +7,7 @@ var Student = Backbone.Model.extend({
     studienabschluss : "",
     studiengang : "",
     hochschule : "Muthesius Kunsthochschule",
+    anzahl: 0
   },
   
   initialize: function(){
@@ -20,6 +21,8 @@ var Student = Backbone.Model.extend({
   }
 });
 
+
+window.student = new Student(semester.student);
 
 var Veranstaltung = Backbone.Model.extend({
   defaults: {
@@ -37,6 +40,28 @@ var Veranstaltung = Backbone.Model.extend({
 var Vorlesungsverzeichnis = Backbone.Collection.extend({
   model: Veranstaltung
 });
+
+
+var Semesterplan = Backbone.Collection.extend({
+  model: Veranstaltung,
+  student: window.student,
+  
+  initialize:function(){
+    this.on("add remove reset", this.added, this);
+  },
+  
+  added: function(veranstaltung){
+    console.log("neue veranstaltung!",this.length)
+    this.student.set("anzahl",this.length);
+  }
+});
+
+window.student.semesterplan = new Semesterplan();
+
+
+
+
+
 
 
 

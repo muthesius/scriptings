@@ -11,12 +11,13 @@ var AppRouter = Backbone.Router.extend({
   },
   
   vvz: function(){
+    $('#container').empty();
     new VVZView({el:$('#container')}); 
   },
   
   showStudentDetails: function(){
     $('#container').empty();
-    // new StudentDetailView({el:$('#container')});
+    new StudentDetailView({el:$('#container')});
   }
   
 })

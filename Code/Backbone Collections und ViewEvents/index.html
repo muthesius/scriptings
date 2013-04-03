@@ -48,17 +48,29 @@
       
     </script>
     
-    <!-- Student View Template -->
+    <!-- Student Front View Template -->
     <script type="text/template" id="student-view">
       <span id="<%= matrikelnummer %>">Hallo, <%= name %>!</span>
       <small>Studiensemester: <%= studiensemester %></small>
+      <small>Veranstaltungen: <%= anzahl %></small>
+    </script>
+    
+    
+    <!-- Student Detail View -->
+    <script type="text/template" id="studentdetail-view">
+      <h2 id="<%= matrikelnummer %>">Hallo, <%= name %>!</h2>
+      
+      <div id="semester">
+        <h3><%= anzahl %> belegte Veranstaltungen</h3>
+        <div id="veranstaltungen"></div>
+      </div>
     </script>
     
     <!-- Veranstaltungs-Template -->
     <script type="text/template" id="veranstaltungs-view">
         <h3><%= titel %></h3>
         <h4><%= person %></h4>
-        <span class="select">+</span>
+        <span class="select" data-index="<%= index %>">+</span>
         <small><%= zeit %></small>
     </script>
   </head>
