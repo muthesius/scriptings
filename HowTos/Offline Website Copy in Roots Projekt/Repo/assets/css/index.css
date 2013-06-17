@@ -1,0 +1,161 @@
+/* ::::: http://mkh.incom.org/skin/css/screen.css?v=4 ::::: */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0pt; padding: 0pt; border: 0pt none; outline: 0pt none; font-size: 100%; vertical-align: baseline; background: none repeat scroll 0% 0% transparent; }
+body { line-height: 1; word-wrap: break-word; }
+ol, ul { list-style: none outside none; }
+:focus { outline: 0pt none; }
+:focus img { opacity: 0.8; }
+body, html { background: url('/img/body-bg.gif') repeat-x scroll 0% 0% rgb(223, 225, 227); font: 11px/16px Verdana,sans-serif; color: rgb(59, 59, 59); }
+a:link, a:visited { color: rgb(206, 125, 46); text-decoration: none; }
+a:hover { color: rgb(240, 144, 2); text-decoration: underline; }
+a:hover img { opacity: 0.8; }
+h1, h2 { font: 21px/30px Georgia,"Times New Roman",Times,serif; color: rgb(98, 110, 122); }
+h1 { font-weight: bold; }
+h2 a:link, h2 a:visited { text-decoration: none; color: rgb(240, 144, 2); }
+h2 a:hover { text-decoration: underline; }
+*::-moz-selection { background: none repeat scroll 0% 0% rgb(240, 144, 2); color: rgb(255, 255, 255); }
+:-moz-placeholder { color: rgb(153, 153, 153); font-style: italic; }
+.post th:not(:last-child), .post td:not(:last-child) { border-right: 1px solid rgb(223, 225, 227); }
+.post-title.cat4, .ws-title.cat4 { background: url('/img/cat4-ws.gif') no-repeat scroll 0pt 1px transparent; }
+a.btn, a.btn:link, a.btn:visited, a.btn:hover { float: left; display: block; height: 17px; text-decoration: none; color: white; background: url('/img/btn-function.gif') repeat-x scroll 0pt 0pt rgb(124, 141, 159); margin: 0pt 0pt 0pt 1px; border-left: 1px solid rgb(124, 141, 159); border-right: 1px solid rgb(124, 141, 159); font: 11px/1em Verdana,Arial,sans-serif; }
+a.btn:hover, a.btn.highprio:hover { background-position: right -34px; }
+a.btn:active, a.btn.highprio:active { background-position: right -68px; }
+input { font: 11px "Verdana",sans-serif; color: rgb(59, 59, 59); border: 1px solid rgb(150, 164, 178); padding: 3px 0pt 0pt 3px; height: 19px; margin-bottom: 6px; }
+input:hover { border-color: rgb(143, 157, 172); }
+input:focus { border-color: rgb(93, 104, 115); }
+button, a span { cursor: pointer; }
+button { font: 11px/1 "Verdana",sans-serif; padding: 0pt 4px 2px; height: 17px; color: white; margin: 0pt 0pt 0pt 1px; border: 1px solid rgb(124, 141, 159); background: url('/img/btn-form.gif') repeat-x scroll 0pt 0pt rgb(124, 141, 159); width: auto; overflow: visible; }
+button:hover { background-position: 0pt -34px; }
+button:active { background-position: 0pt -68px; }
+#wrapper { width: 996px; }
+#header { width: 828px; border-right: 1px solid rgb(151, 161, 171); height: 96px; background-color: rgb(93, 104, 115); color: white; }
+#header p, #header a, #header h3 { color: white; }
+#header a:link, #header a:visited { text-decoration: underline; }
+#header a:hover { color: rgb(240, 144, 2); }
+#header em { font-style: normal; font-weight: normal; }
+#logo { float: left; }
+#logo a { float: left; width: 276px; height: 96px; display: block; background: url('/img/header-logo-de.gif') no-repeat scroll left top transparent; text-indent: -5000px; overflow: hidden; line-height: 0; }
+html:lang(en) #logo a { background: url('/img/header-logo-en.gif') no-repeat scroll left top transparent; }
+#logo a:hover { background-position: 0pt -96px; }
+#nav-main { position: absolute; top: 48px; left: 276px; width: 552px; }
+#nav-main ul li { float: left; height: 48px; }
+#nav-main ul li a { display: block; height: 48px; text-indent: -5000px; overflow: hidden; line-height: 0; background-image: url('/img/nav-main-de.gif'); }
+html:lang(en) #nav-main ul li a { background-image: url('/img/nav-main-en.gif'); }
+#nav-startseite a { width: 96px; }
+#nav-workspaces a { width: 96px; background-position: -96px 0pt; }
+#nav-schwarzesbrett a { width: 132px; background-position: -192px 0pt; }
+#nav-schwarzesbrett a { width: 132px; background-position: -192px 0pt; }
+#nav-projektarchiv a { width: 108px; background-position: -324px 0pt; }
+#nav-personen a { width: 84px; background-position: -432px 0pt; }
+#nav-hilfe a { width: 36px; background-position: -516px 0pt; }
+#nav-startseite a:hover { background-position: 0pt -48px; }
+#nav-workspaces a:hover { background-position: -96px -48px; }
+#nav-schwarzesbrett a:hover { background-position: -192px -48px; }
+#nav-schwarzesbrett a:hover { background-position: -192px -48px; }
+#nav-projektarchiv a:hover { background-position: -324px -48px; }
+#nav-personen a:hover { background-position: -432px -48px; }
+#nav-hilfe a:hover { background-position: -516px -48px; }
+#nav-startseite.current a { background-position: 0pt -96px; }
+html:lang(en) #nav-startseite a { width: 74px; }
+html:lang(en) #nav-workspaces a { width: 108px; background-position: -74px 0pt; }
+html:lang(en) #nav-schwarzesbrett a { width: 118px; background-position: -182px 0pt; }
+html:lang(en) #nav-projektarchiv a { width: 144px; background-position: -300px 0pt; }
+html:lang(en) #nav-personen a { width: 70px; background-position: -444px 0pt; }
+html:lang(en) #nav-hilfe a { width: 36px; background-position: -514px 0pt; }
+html:lang(en) #nav-startseite a:hover { background-position: 0pt -48px; }
+html:lang(en) #nav-workspaces a:hover { background-position: -74px -48px; }
+html:lang(en) #nav-schwarzesbrett a:hover { background-position: -182px -48px; }
+html:lang(en) #nav-projektarchiv a:hover { background-position: -300px -48px; }
+html:lang(en) #nav-personen a:hover { background-position: -444px -48px; }
+html:lang(en) #nav-hilfe a:hover { background-position: -514px -48px; }
+html:lang(en) #nav-startseite.current a { background-position: 0pt -96px; }
+html:lang(en) #nav-workspaces.current a { background-position: -74px -96px; }
+html:lang(en) #nav-schwarzesbrett.current a { background-position: -192px -96px; }
+html:lang(en) #nav-schwarzesbrett.current a { background-position: -182px -96px; }
+html:lang(en) #nav-projektarchiv.current a { background-position: -300px -96px; }
+html:lang(en) #nav-personen.current a { background-position: -444px -96px; }
+html:lang(en) #nav-hilfe.current a { background-position: -514px -96px; }
+#nav-meta { padding: 6px 12px; float: right; text-align: right; }
+#nav-meta * { text-align: left; }
+#header-myincom, #header-myincom-login { position: absolute; top: 0pt; left: 828px; z-index: 9000; }
+#header-myincom-login { width: 156px; padding: 6px 12px; }
+#header-myincom-login h3 { padding: 0pt 0pt 6px; }
+#header-myincom-login label { display: none; }
+#header-myincom-login input#email { float: left; width: 141px; }
+#header-myincom-login input#password { float: left; clear: both; width: 117px; border-right: medium none; }
+#header-myincom-login button#login-submit { float: left; margin: 0pt; width: 25px; height: 24px; text-indent: -5000px; overflow: hidden; line-height: 0; border: medium none; background: url('/img/btn-form-submit-inline.gif') no-repeat scroll 0pt 0pt transparent; }
+#header-myincom-login button#login-submit:hover { background-position: 0pt -24px; }
+#header-myincom-login button#login-submit:active { background-position: 0pt -48px; }
+html:lang(en) #nav-meinincom { background-image: url('/img/nav-main-en.gif'); }
+#globalsearch { position: absolute; top: 114px; left: 840px; width: 156px; }
+#globalsearch label { display: none; }
+#globalsearch input { float: left; width: 117px; border-right: medium none; }
+#globalsearch button { float: left; margin: 0pt; width: 25px; height: 24px; text-indent: -5000px; overflow: hidden; line-height: 0; border: medium none; background: url('/img/btn-form-globalsearch-inline.gif') no-repeat scroll 0pt 0pt transparent; }
+#globalsearch button:hover { background-position: 0pt -24px; }
+#globalsearch button:active { background-position: 0pt -48px; }
+#footer { float: left; clear: both; width: 532px; padding: 18px 0pt 18px 294px; }
+#footer, #footer a:link, #footer a:visited { font-size: 10px; color: rgb(114, 128, 142); }
+#footer a:link, #footer a:visited { text-decoration: underline; }
+#footer a:hover { color: rgb(240, 144, 2); }
+#footer .trenner { padding: 0px 6px; }
+a.more { padding-bottom: 1px; border-bottom: 1px solid rgb(221, 221, 221); padding-right: 16px; background: url('/img/link-more.gif') no-repeat scroll right top transparent; }
+a.more:hover { text-decoration: none; border-color: rgb(240, 144, 2); }
+a.go { float: left; color: rgb(240, 144, 2); clear: both; margin-top: 9px; padding-bottom: 1px; border-bottom: 1px solid rgb(221, 221, 221); font-weight: bold; padding-left: 16px; background: url('/img/link-more.gif') no-repeat scroll left 1px transparent; }
+#overlay-addToProject table tr:nth-child(2n+1) { background-color: rgba(114, 128, 142, 0.4); }
+#overlay-addToProject table tr:nth-child(2n) { background-color: rgba(124, 141, 159, 0.4); }
+.ui-menu li:nth-child(2n) { background: none repeat scroll 0% 0% rgb(248, 248, 248); }
+#page-wrapper { float: left; }
+#content { float: left; width: 534px; padding-top: 18px; }
+html:lang(en) #incom-ws #content, html:lang(en) #incom-ws-overview #content { background: url('/img/content-wedge-dark.gif') no-repeat scroll 94px -1px transparent; }
+html:lang(en) #incom-ws.schwarzbrot #content { background: url('/img/content-wedge-dark.gif') no-repeat scroll 206px -1px transparent; }
+html:lang(en) #incom-article.help #content { background: url('/img/content-wedge-white.gif') no-repeat scroll 500px 0pt transparent; }
+html:lang(en) #incom-projects #content { background: url('/img/content-wedge-dark.gif') no-repeat scroll 350px 0pt transparent; }
+html:lang(en) #incom-projects.projectdetail #content { background: url('/img/content-wedge-white.gif') no-repeat scroll 350px 0pt transparent; }
+html:lang(en) #incom-users #content { background: url('/img/content-wedge-dark.gif') no-repeat scroll 455px 0pt transparent; }
+#incom-home h2 { font-size: 16px; line-height: 22px; }
+#incom-home h1 { font-size: 16px; line-height: 22px; }
+#incom-home h2 a {  }
+#incom-home a.go { width: 180px; }
+#incom-home a.rss { float: right; display: block; margin-top: 9px; padding: 0pt 3px 0pt 0pt; height: 16px; width: 16px; background: url('/img/btn-icn-link-rss.gif') no-repeat scroll 0pt 0pt transparent; text-indent: -5000px; overflow: hidden; line-height: 0; }
+#home-projects { float: left; width: 294px; padding-top: 18px; z-index: 15000; }
+.projects-wrapper { float: left; padding: 12px 12px 12px 0pt; background-color: rgb(93, 104, 115); }
+#home-projects img { float: left; padding-top: 1px; clear: both; width: 140px; }
+#home-projects .project { float: left; clear: both; position: relative; }
+#home-projects .project:hover { background: none repeat scroll 0% 0% white; }
+#home-projects .project:hover .project-meta { display: block; overflow: hidden; }
+#home-projects .project-meta { position: absolute; display: none; float: left; top: 0pt; left: 140px; width: 141px; min-height: 95px; padding: 3px 3px 6px 9px; color: white; background: none repeat scroll 0% 0% rgb(114, 128, 142); border-top: 1px solid white; opacity: 0.9; z-index: 15000; }
+#home-schwarzbrett-wrapper { float: left; width: 266px; margin-right: 1px; }
+#home-workspaces-wrapper { float: left; width: 267px; }
+#incom-home .post-wrapper { float: left; padding: 12px; background-color: rgb(93, 104, 115); width: 242px; margin-bottom: 1px; }
+#home-projects h1 { width: 152px; background: url('/img/home-projects-head-de.gif') no-repeat scroll 0pt 0pt transparent; }
+html:lang(en) #home-projects h1 { background: url('/img/home-projects-head-en.gif') no-repeat scroll 0pt 0pt transparent; }
+#home-projects .project a { color: white; }
+#incom-home h1#h-projekte-aktuell, #incom-home h1#h-schwarzbrett-aktuell, #incom-home h1#h-workspaces-aktuell { float: left; height: 36px; text-indent: -5000px; overflow: hidden; line-height: 0; border: medium none; }
+#incom-home h1#h-schwarzbrett-aktuell { width: 266px; background: url('/img/home-schwarzbrett-head-de.gif') no-repeat scroll 0pt 0pt transparent; }
+html:lang(en) #incom-home h1#h-schwarzbrett-aktuell { background: url('/img/home-schwarzbrett-head-en.gif') no-repeat scroll 0pt 0pt transparent; }
+#incom-home h1#h-workspaces-aktuell { width: 266px; background: url('/img/home-workspaces-head-de.gif') no-repeat scroll 0pt 0pt transparent; }
+html:lang(en) #incom-home h1#h-workspaces-aktuell { background: url('/img/home-workspaces-head-en.gif') no-repeat scroll 0pt 0pt transparent; }
+#home-projects .projects-wrapper { float: left; clear: both; }
+#home-workspaces-wrapper .post-wrapper { padding-top: 3px; }
+#home-workspaces-wrapper .post-wrapper .post-title { float: left; color: rgb(206, 212, 217); padding: 1px 6px 4px 20px; margin-left: -3px; display: inline; }
+#incom-home .post { float: left; background-color: white; padding: 6px 12px 12px; width: 218px; }
+#incom-home .post img { padding: 6px 0pt; }
+#incom-home .post .meta { float: left; width: 100%; clear: both; color: rgb(153, 165, 172); position: relative; z-index: 8999; }
+#home-workspaces-wrapper .meta { padding: 9px 0pt 0pt; }
+#incom-home .person-wrapper { float: left; position: absolute; }
+#home-workspaces-wrapper .person-wrapper { top: -1px; left: 230px; min-height: 40px; background-image: url('/img/home-workspaces-wedge.gif'); background-repeat: no-repeat; padding: 12px 0pt 0pt 24px; width: 168px; }
+#home-schwarzbrett-wrapper .person-wrapper { width: 120px; top: -9px; left: -156px; height: 60px; background: url('/img/post-wedge-left.gif') no-repeat scroll right top transparent; padding: 12px 24px 0pt 0pt; }
+#incom-home .person-wrapper a, #incom-home .person-wrapper span { display: block; font: italic 13px/16px Georgia,"Times New Roman",Times,serif; color: rgb(59, 59, 59); text-decoration: none; background-image: url('/img/icn-user.gif'); background-repeat: no-repeat; }
+#incom-home .person-wrapper a:hover { color: rgb(240, 144, 2); }
+#home-schwarzbrett-wrapper .person-wrapper a, #home-schwarzbrett-wrapper .person-wrapper span { padding: 1px 20px 4px 0pt; text-align: right; background-position: right top; }
+#home-workspaces-wrapper .person-wrapper a, #home-workspaces-wrapper .person-wrapper span { padding: 1px 0pt 0pt 20px; background-position: left top; }
+.post h2 { float: left; width: 90%; }
+.post .clear { display: block; float: none; clear: both; }
+.person { font-style: italic; background-image: url('/img/icn-user.gif'); }
+#nav-meta .switch { margin-top: 6px; }
+a.btn.switch { margin: 0pt; border: medium none; height: 17px; padding: 0pt 5px; line-height: 15px; cursor: pointer; text-decoration: none ! important; }
+a.btn.switch.on { background: none repeat scroll 0% 0% rgb(122, 139, 156); }
+a.btn.switch-l { border-radius: 8px 0pt 0pt 8px; padding-left: 8px; border-right: 1px solid rgb(150, 164, 178); }
+a.btn.switch-r { border-radius: 0pt 8px 8px 0pt; padding-right: 8px; }
+/* ::::: http://mkh.incom.org/skin/css/markdown.css ::::: */
+
