@@ -17,7 +17,7 @@ b) Warte auf die neue Palette und gib dann den Namen des Paketes ein, das Du ins
 
 Diese Pakete werden benötigt:
 
-1) sublime-better-coffee-script
-2) jade
-3) JadeSnippets
-4) Stylus
+1. sublime-better-coffee-script
+2. jade
+3. JadeSnippets
+4. Stylus
